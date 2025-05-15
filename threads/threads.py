@@ -1,10 +1,12 @@
 import threading
 import time
 
+
 def worker(name, seconds):
     print(f"Thread {name} starting")
     time.sleep(seconds)
     print(f"Thread {name} finished after {seconds} seconds")
+
 
 start_time = time.perf_counter()
 
